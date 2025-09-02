@@ -1,0 +1,113 @@
+:root {
+  --color-lite-purple: #5740e3;
+  --color-lite-orange: #ff8c6a;
+  --color-lite-blue: #48bfe2;
+  --color-lite-pink: #ff617d;
+  --color-lite-green: #38ce87;
+  --color-lite-magenta: #7331ca;
+  --color-lite-yellow: #f3c868;
+  --color-lite-primary: #22244a;
+  --color-bg: #141a27;
+  --border-radius: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: var(--color-bg);*/
+}
+#root {
+  width: 80%;
+  height: 50%;
+  border: 2px dotted gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col-span-2 {
+  width: 100%;
+  height: 100%;
+}
+.col-span-2 .row {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-card {
+  height: 96%;
+  margin: 2%;
+  background-color: var(--color-lite-primary);
+  border-radius: var(--border-radius);
+}
+.activity-card {
+  height: 96%;
+  margin: 2%;
+  border-radius: var(--border-radius);
+}
+.light-orange {
+  background-color: var(--color-lite-orange);
+}
+.light-blue {
+  background-color: var(--color-lite-blue);
+}
+.light-pink {
+  background-color: var(--color-lite-pink);
+}
+.light-green {
+  background-color: var(--color-lite-green);
+}
+.light-magenta {
+  background-color: var(--color-lite-magenta);
+}
+.light-yellow {
+  background-color: var(--color-lite-yellow);
+}
+
+.profile-card-header {
+  height: 70%;
+  padding: 1rem 0rem 4rem 0rem;
+  background-color: var(--color-lite-purple);
+  color: white;
+  border-radius: var(--border-radius);
+  padding-bottom: 8rem;
+}
+.profile-card-header .mini {
+  color: var(--light-gray);
+  padding: 0.8rem;
+}
+.profile-card-header .username {
+  font-size: 2.2rem;
+  padding: 0.8rem;
+}
+.profile-card-image {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 2px;
+}
+.profile-card-image img {
+  padding: 2px;
+  border-radius: 50%;
+  background-color: white;
+  width: 40%;
+}
+.profile-card-body {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+  color: gray;
+}
