@@ -9,8 +9,10 @@ export default function ProfileCard({ name }: Props) {
         <div className="profile-card-image">
           <img src="src/assets/images/image-jeremy.png" alt="" />
         </div>
-        <p className="mini">Report for</p>
-        <p className="username">{name}</p>
+        <div className="col">
+          <p className="mini">Report for</p>
+          <p className="username">{name}</p>
+        </div>
       </div>
       <div className="profile-card-body">
         <p>Daily</p>

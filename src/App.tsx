@@ -12,27 +12,60 @@ function App() {
         <div className="row">
           <ActivityCard
             bg="light-orange"
-            image="../src/assets/images/icon-play.svg"
+            image="../src/assets/images/icon-work.svg"
+            name="Work"
+            duration="32hrs"
+            last_duration="36hrs"
           />
         </div>
         <div className="row">
-          <ActivityCard bg="light-green" />
+          <ActivityCard
+            bg="light-green"
+            image="../src/assets/images/icon-exercise.svg"
+            name="Exercise"
+            duration="4hrs"
+            last_duration="5hrs"
+          />
         </div>
       </div>
       <div className="col-span-2">
         <div className="row">
-          <ActivityCard bg="light-blue" />
+          <ActivityCard
+            bg="light-blue"
+            image="../src/assets/images/icon-play.svg"
+            name="Play"
+            duration="10hrs"
+            last_duration="8hrs"
+          />
         </div>
         <div className="row">
-          <ActivityCard bg="light-magenta" />
+          <ActivityCard
+            bg="light-magenta"
+            image="../src/assets/images/icon-social.svg"
+            name="Social"
+            duration="5hrs"
+            last_duration="10hrs"
+          />
         </div>
       </div>
       <div className="col-span-2">
         <div className="row">
-          <ActivityCard bg="light-pink" />
+          <ActivityCard
+            bg="light-pink"
+            image="../src/assets/images/icon-study.svg"
+            name="Study"
+            duration="4hrs"
+            last_duration="2hrs"
+          />
         </div>
         <div className="row">
-          <ActivityCard bg="light-yellow" />
+          <ActivityCard
+            bg="light-yellow"
+            image="../src/assets/images/icon-self-care.svg"
+            name="Self Care"
+            duration="2hrs"
+            last_duration="2hrs"
+          />
         </div>
       </div>
     </>

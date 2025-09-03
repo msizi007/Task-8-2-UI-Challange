@@ -21,11 +21,14 @@ body {
   width: 100%;
   height: 100%;
 }
+html {
+  font-size: 100%;
+}
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background-color: var(--color-bg);*/
+  background-color: var(--color-bg);
 }
 .light-orange {
   background-color: var(--color-lite-orange);
@@ -48,8 +51,7 @@ body {
 
 #root {
   width: 80%;
-  height: 50%;
-  border: 2px dotted gray;
+  height: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,14 +74,50 @@ body {
   border-radius: var(--border-radius);
 }
 .activity-card {
-  height: 96%;
+  height: 90%;
   margin: 2%;
   border-radius: var(--border-radius);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
   position: relative;
 }
 
-.activity-card .icon{
-  
+.activity-card .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+}
+
+.activity-card-body {
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: var(--color-lite-primary);
+  border-radius: var(--border-radius);
+  color: white;
+}
+
+.activity-card-body .row {
+  display: row;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.2rem 0.8rem;
+  font-weight: 700;
+  font-family: monospace;
+}
+.activity-card-body h4 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  font-family: system-ui;
+  padding: 0.8rem;
+}
+.last-duration {
+  padding: 0 0.8rem;
+  color: gray;
 }
 
 .profile-card-header {
@@ -92,6 +130,7 @@ body {
 }
 .profile-card-header .mini {
   color: var(--light-gray);
+  font-size: 1.2rem;
   padding: 0.8rem;
 }
 .profile-card-header .username {
@@ -116,4 +155,122 @@ body {
   justify-content: space-evenly;
   padding-left: 1rem;
   color: gray;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 70%;
+  }
+  #root {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-card {
+    height: auto;
+    background-color: var(--color-lite-primary);
+    border-radius: var(--border-radius);
+  }
+  .profile-card-header {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem 0rem 2rem 0rem;
+    background-color: var(--color-lite-purple);
+    color: white;
+    border-radius: var(--border-radius);
+    padding-bottom: 1rem;
+  }
+  .profile-card-header .col {
+    color: var(--light-gray);
+    padding: 1rem;
+  }
+  .profile-card-header .mini {
+    color: rgb(201, 201, 201);
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .profile-card-image {
+    display: inline-block;
+    width: 20%;
+  }
+  .profile-card-image img {
+    padding: 2px;
+    border-radius: 50%;
+    background-color: white;
+    width: 100%;
+  }
+  .profile-card-header .username {
+    font-size: 2.2rem;
+    padding: 0;
+    margin-top: 0.4rem;
+  }
+  .profile-card-body {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: gray;
+  }
+  .activity-card {
+    height: 140px;
+    margin: 2%;
+    border-radius: var(--border-radius);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    position: relative;
+  }
+  .activity-card .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+  }
+  .activity-card-body {
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    background-color: var(--color-lite-primary);
+    border-radius: var(--border-radius);
+    color: white;
+    padding-bottom: 0px;
+  }
+  .activity-card-body .row {
+    display: row;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2rem 1rem;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 1.2rem;
+  }
+  .period {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .activity-card-body h4 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    font-family: system-ui;
+    padding: 0.8rem;
+  }
+  .last-duration {
+    padding: 0 0.8rem;
+    color: rgb(210, 210, 210);
+  }
+
+  /*
+
+  */
 }
