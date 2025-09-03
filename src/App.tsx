@@ -10,7 +10,10 @@ function App() {
       </div>
       <div className="col-span-2">
         <div className="row">
-          <ActivityCard bg="light-orange" />
+          <ActivityCard
+            bg="light-orange"
+            image="../src/assets/images/icon-play.svg"
+          />
         </div>
         <div className="row">
           <ActivityCard bg="light-green" />

@@ -1,10 +1,20 @@
+type Color =
+  | "light-pink"
+  | "light-blue"
+  | "light-orange"
+  | "light-green"
+  | "light-magenta"
+  | "light-yellow";
+
 interface Props {
-  bg: string;
+  bg: Color;
+  image: string;
 }
-export default function ActivityCard({ bg }: Props) {
+
+export default function ActivityCard({ bg, image }: Props) {
   return (
     <div className={`activity-card ${bg}`}>
-      <div className="acticity-card-header"></div>
+      <img src={image} alt="" />
       <div className="activity-card-body"></div>
     </div>
   );

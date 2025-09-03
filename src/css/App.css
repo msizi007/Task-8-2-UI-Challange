@@ -27,6 +27,25 @@ body {
   justify-content: center;
   /*background-color: var(--color-bg);*/
 }
+.light-orange {
+  background-color: var(--color-lite-orange);
+}
+.light-blue {
+  background-color: var(--color-lite-blue);
+}
+.light-pink {
+  background-color: var(--color-lite-pink);
+}
+.light-green {
+  background-color: var(--color-lite-green);
+}
+.light-magenta {
+  background-color: var(--color-lite-magenta);
+}
+.light-yellow {
+  background-color: var(--color-lite-yellow);
+}
+
 #root {
   width: 80%;
   height: 50%;
@@ -56,24 +75,11 @@ body {
   height: 96%;
   margin: 2%;
   border-radius: var(--border-radius);
+  position: relative;
 }
-.light-orange {
-  background-color: var(--color-lite-orange);
-}
-.light-blue {
-  background-color: var(--color-lite-blue);
-}
-.light-pink {
-  background-color: var(--color-lite-pink);
-}
-.light-green {
-  background-color: var(--color-lite-green);
-}
-.light-magenta {
-  background-color: var(--color-lite-magenta);
-}
-.light-yellow {
-  background-color: var(--color-lite-yellow);
+
+.activity-card .icon{
+  
 }
 
 .profile-card-header {
