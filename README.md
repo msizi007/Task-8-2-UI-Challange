@@ -35,8 +35,14 @@ npm run dev
 <img width="1440" height="1024" alt="UI Design Reference" src="https://github.com/user-attachments/assets/bef4d324-4276-442c-9ea4-c4846b249552" />
 
 ---
-###### Media queries
-Desktop (> 1024px)
-Mobile (< 475px)
+##### Components
+- ActivityCard
+- ProfileCard
+
+##### Media queries
+- Desktop (> 1024px)
+- Mobile (< 475px)
+
+
 
 
