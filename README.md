@@ -9,17 +9,17 @@ A front-end **UI challenge** where I was provided with an **incomplete UI projec
 
 Follow the steps below to run this project locally:
 
-1. Clone the project on your local machine
+1. Clone the project on your local machine with:
 ```bash
 git clone https://github.com/msizi007/Task-8-2-UI-Challange.git
 ```
 
-2. Open / Goto the the repo you've just cloned...
+2. Open / Goto the the repo you've just cloned on your local machine...
 ```bash
 cd Task-8-2-UI-Challange
 ```
 
-3. Intall all packages necessary
+3. Install all packages necessary
 ```bash
 npm install
 ```
@@ -35,5 +35,8 @@ npm run dev
 <img width="1440" height="1024" alt="UI Design Reference" src="https://github.com/user-attachments/assets/bef4d324-4276-442c-9ea4-c4846b249552" />
 
 ---
+###### Media queries
+Desktop (> 1024px)
+Mobile (< 475px)
 
 
