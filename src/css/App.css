@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "SoraLight";
+  src: url("../assets/fonts/Sora-Light.ttf");
+}
 :root {
   --color-lite-purple: #5740e3;
   --color-lite-orange: #ff8c6a;
@@ -15,6 +19,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: SoraLight;
+  font-weight: 300;
 }
 html,
 body {
@@ -29,6 +35,16 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--color-bg);
+}
+body.dark {
+  --color-lite-primary: #22244a;
+  --color-bg: #141a27;
+  --light-gray: #c1c1c1;
+}
+body.light {
+  --color-lite-primary: #484a78;
+  --color-bg: #ffffff;
+  --light-gray: #f5f5f5;
 }
 .light-orange {
   background-color: var(--color-lite-orange);
@@ -51,7 +67,7 @@ body {
 
 #root {
   width: 80%;
-  height: 60%;
+  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -117,7 +133,9 @@ body {
 }
 .last-duration {
   padding: 0 0.8rem;
-  color: gray;
+  color: rgb(196, 193, 193);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .profile-card-header {
@@ -130,12 +148,13 @@ body {
 }
 .profile-card-header .mini {
   color: var(--light-gray);
-  font-size: 1.2rem;
-  padding: 0.8rem;
+  font-size: 0.8rem;
+  padding-left: 0.8rem;
+  margin-top: 1.5rem;
 }
 .profile-card-header .username {
   font-size: 2.2rem;
-  padding: 0.8rem;
+  padding-left: 0.8rem;
 }
 .profile-card-image {
   width: 100%;
@@ -156,6 +175,51 @@ body {
   padding-left: 1rem;
   color: gray;
 }
+
+.theme-toggle {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid var(--color-lite-purple);
+  border-radius: 2rem;
+}
+.theme-toggle button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.theme-toggle img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.theme-toggle img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.theme-toggle img:active {
+  transform: scale(0.9);
+  transition: all 0.1s ease-in-out;
+}
+.theme-toggle .dark.active {
+  background-color: white;
+  border-radius: 2rem;
+}
+.theme-toggle .light.active {
+  background-color: black;
+  border-radius: 2rem;
+}
+.row p {
+  font-weight: 700;
+}
+
 /* MOBILE VIEW */
 @media only screen and (max-width: 475px) {
   html {
@@ -267,10 +331,6 @@ body {
   }
   .last-duration {
     padding: 0 0.8rem;
-    color: rgb(210, 210, 210);
+    color: rgb(24, 5, 5);
   }
-
-  /*
-
-  */
 }
