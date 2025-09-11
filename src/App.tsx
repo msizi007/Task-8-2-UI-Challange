@@ -1,11 +1,20 @@
 import "../src/css/App.css";
 import ProfileCard from "./components/ProfileCard";
 import ActivityCard from "./components/activityCard";
+import ThemeToggle from "./components/themeToggle";
+import { useState } from "react";
 
 function App() {
+  const [theme, setTheme] = useState("dark");
+
+  {
+    document.querySelector("body")!.className = theme;
+  }
+
   return (
     <>
       <div className="col-span-2">
+        <ThemeToggle value={theme} onChange={setTheme} />
         <ProfileCard name="Jeremy Robson" />
       </div>
       <div className="col-span-2">
